@@ -18,10 +18,8 @@
  *
  */
 
-// const HDWalletProvider = require('@truffle/hdwallet-provider');
-//
-// const fs = require('fs');
-// const mnemonic = fs.readFileSync(".secret").toString().trim();
+ const HDWalletProvider = require('@truffle/hdwallet-provider');
+ const { projectId, mnemonic } = require('./.secrets.json');
 
 module.exports = {
   /**
@@ -41,6 +39,17 @@ module.exports = {
     // tab if you use this network and you must also set the `host`, `port` and `network_id`
     // options below to some value.
     //
+    rinkeby: {
+      provider: () => new HDWalletProvider(mnemonic, `https://rinkeby.infura.io/v3/${projectId}`),
+      network_id: 4,       // Rinkeby's id
+      gas: 8500000,        
+      gasPrice: 10000000000,  // 1 gwei (in wei) (default: 100 gwei)
+      confirmations: 2,    // # of confs to wait between deployments. (default: 0)
+      timeoutBlocks: 200,  // # of blocks before a deployment times out  (minimum/default: 50)
+      skipDryRun: true,     // Skip dry run before migrations? (default: false for public nets )
+      disableConfirmationListener: true
+    },
+    
     // development: {
     //  host: "127.0.0.1",     // Localhost (default: none)
     //  port: 8545,            // Standard Ethereum port (default: none)
@@ -82,16 +91,23 @@ module.exports = {
   compilers: {
     solc: {
       version: "0.8.6",    // Fetch exact version from solc-bin (default: truffle's version)
-      // docker: true,        // Use "0.5.1" you've installed locally with docker (default: false)
       settings: {          // See the solidity docs for advice about optimization and evmVersion
         optimizer: {
           enabled: false,
           runs: 200
         },
-      //  evmVersion: "byzantium"
+        //evmVersion: "london"
       }
     }
   },
+
+  api_keys: {
+    etherscan: 'U5VE5DDDBWCZF12QS4T83K1CKJ3CSXIIHG'
+  },
+
+  plugins: [
+    'truffle-plugin-verify'
+  ]
 
   // Truffle DB is currently disabled by default; to enable it, change enabled:
   // false to enabled: true. The default storage location can also be

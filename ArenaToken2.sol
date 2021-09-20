@@ -1,8 +1,7 @@
 // File: @openzeppelin/contracts/utils/introspection/IERC165.sol
 
 // SPDX-License-Identifier: MIT
-
-pragma solidity ^0.8.0;
+pragma solidity ^0.8.7;
 
 /**
  * @dev Interface of the ERC165 standard, as defined in the
@@ -27,9 +26,9 @@ interface IERC165 {
 
 // File: @openzeppelin/contracts/token/ERC721/IERC721.sol
 
-// SPDX-License-Identifier: MIT
 
-pragma solidity ^0.8.0;
+
+
 
 
 /**
@@ -171,9 +170,9 @@ interface IERC721 is IERC165 {
 
 // File: @openzeppelin/contracts/token/ERC721/IERC721Receiver.sol
 
-// SPDX-License-Identifier: MIT
 
-pragma solidity ^0.8.0;
+
+
 
 /**
  * @title ERC721 token receiver interface
@@ -200,9 +199,9 @@ interface IERC721Receiver {
 
 // File: @openzeppelin/contracts/token/ERC721/extensions/IERC721Metadata.sol
 
-// SPDX-License-Identifier: MIT
 
-pragma solidity ^0.8.0;
+
+
 
 
 /**
@@ -228,9 +227,9 @@ interface IERC721Metadata is IERC721 {
 
 // File: @openzeppelin/contracts/utils/Address.sol
 
-// SPDX-License-Identifier: MIT
 
-pragma solidity ^0.8.0;
+
+
 
 /**
  * @dev Collection of functions related to the address type
@@ -447,9 +446,9 @@ library Address {
 
 // File: @openzeppelin/contracts/utils/Context.sol
 
-// SPDX-License-Identifier: MIT
 
-pragma solidity ^0.8.0;
+
+
 
 /**
  * @dev Provides information about the current execution context, including the
@@ -473,9 +472,9 @@ abstract contract Context {
 
 // File: @openzeppelin/contracts/utils/Strings.sol
 
-// SPDX-License-Identifier: MIT
 
-pragma solidity ^0.8.0;
+
+
 
 /**
  * @dev String operations.
@@ -542,9 +541,9 @@ library Strings {
 
 // File: @openzeppelin/contracts/utils/introspection/ERC165.sol
 
-// SPDX-License-Identifier: MIT
 
-pragma solidity ^0.8.0;
+
+
 
 
 /**
@@ -572,9 +571,9 @@ abstract contract ERC165 is IERC165 {
 
 // File: @openzeppelin/contracts/token/ERC721/ERC721.sol
 
-// SPDX-License-Identifier: MIT
 
-pragma solidity ^0.8.0;
+
+
 
 
 
@@ -985,9 +984,9 @@ contract ERC721 is Context, ERC165, IERC721, IERC721Metadata {
 
 // File: @openzeppelin/contracts/token/ERC721/extensions/IERC721Enumerable.sol
 
-// SPDX-License-Identifier: MIT
 
-pragma solidity ^0.8.0;
+
+
 
 
 /**
@@ -1015,9 +1014,9 @@ interface IERC721Enumerable is IERC721 {
 
 // File: @openzeppelin/contracts/token/ERC721/extensions/ERC721Enumerable.sol
 
-// SPDX-License-Identifier: MIT
 
-pragma solidity ^0.8.0;
+
+
 
 
 
@@ -1179,9 +1178,9 @@ abstract contract ERC721Enumerable is ERC721, IERC721Enumerable {
 
 // File: @openzeppelin/contracts/token/ERC721/extensions/ERC721Burnable.sol
 
-// SPDX-License-Identifier: MIT
 
-pragma solidity ^0.8.0;
+
+
 
 
 
@@ -1206,9 +1205,9 @@ abstract contract ERC721Burnable is Context, ERC721 {
 
 // File: @openzeppelin/contracts/security/Pausable.sol
 
-// SPDX-License-Identifier: MIT
 
-pragma solidity ^0.8.0;
+
+
 
 
 /**
@@ -1298,9 +1297,9 @@ abstract contract Pausable is Context {
 
 // File: @openzeppelin/contracts/token/ERC721/extensions/ERC721Pausable.sol
 
-// SPDX-License-Identifier: MIT
 
-pragma solidity ^0.8.0;
+
+
 
 
 
@@ -1332,9 +1331,9 @@ abstract contract ERC721Pausable is ERC721, Pausable {
 
 // File: @openzeppelin/contracts/access/IAccessControl.sol
 
-// SPDX-License-Identifier: MIT
 
-pragma solidity ^0.8.0;
+
+
 
 /**
  * @dev External interface of AccessControl declared to support ERC165 detection.
@@ -1422,9 +1421,9 @@ interface IAccessControl {
 
 // File: @openzeppelin/contracts/access/IAccessControlEnumerable.sol
 
-// SPDX-License-Identifier: MIT
 
-pragma solidity ^0.8.0;
+
+
 
 
 /**
@@ -1454,9 +1453,9 @@ interface IAccessControlEnumerable is IAccessControl {
 
 // File: @openzeppelin/contracts/access/AccessControl.sol
 
-// SPDX-License-Identifier: MIT
 
-pragma solidity ^0.8.0;
+
+
 
 
 
@@ -1666,9 +1665,9 @@ abstract contract AccessControl is Context, IAccessControl, ERC165 {
 
 // File: @openzeppelin/contracts/utils/structs/EnumerableSet.sol
 
-// SPDX-License-Identifier: MIT
 
-pragma solidity ^0.8.0;
+
+
 
 /**
  * @dev Library for managing
@@ -2025,9 +2024,9 @@ library EnumerableSet {
 
 // File: @openzeppelin/contracts/access/AccessControlEnumerable.sol
 
-// SPDX-License-Identifier: MIT
 
-pragma solidity ^0.8.0;
+
+
 
 
 
@@ -2106,9 +2105,9 @@ abstract contract AccessControlEnumerable is IAccessControlEnumerable, AccessCon
 
 // File: @openzeppelin/contracts/utils/Counters.sol
 
-// SPDX-License-Identifier: MIT
 
-pragma solidity ^0.8.0;
+
+
 
 /**
  * @title Counters
@@ -2151,9 +2150,9 @@ library Counters {
 
 // File: @openzeppelin/contracts/token/ERC721/presets/ERC721PresetMinterPauserAutoId.sol
 
-// SPDX-License-Identifier: MIT
 
-pragma solidity ^0.8.0;
+
+
 
 
 
@@ -2289,8 +2288,7 @@ contract ERC721PresetMinterPauserAutoId is
 
 // File: contracts/ArenaToken.sol
 
-// SPDX-License-Identifier: MIT
-pragma solidity 0.8.6;
+
 
 
 contract ArenaToken is ERC721PresetMinterPauserAutoId{

@@ -5,6 +5,6 @@ import "@openzeppelin/contracts/token/ERC721/presets/ERC721PresetMinterPauserAut
 
 contract ArenaToken is ERC721PresetMinterPauserAutoId{
 
-    constructor() ERC721PresetMinterPauserAutoId("Arena", "ARN","") {
+    constructor() ERC721PresetMinterPauserAutoId("Arena", "ARN","https://my-json-server.typicode.com/fosgate29/arena/tokens/") {
     }
 }
